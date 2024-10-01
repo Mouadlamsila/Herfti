@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/homee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="close">
+            <span class="material-symbols-outlined close" id="close">
+                close
+            </span>
+        </div>
+        <p>حرفتي</p>
+        <ul>
+            <li><a href="">الصفحة الرئيسية</a></li>
+            <li><a href="">معلومات</a></li>
+            <li><a href="">حرفيين</a></li>
+            <li><a href="entreprise.php">شركات</a></li>
+            <li><a href="">مشاريع</a></li>
+        </ul>
+        <a href="../html/inscrire_acc.php" class="btn">إلتحـــاق</a>
+    </header>
+
+    <header>
+        <span class="material-symbols-outlined show" id="show" style="font-size: xx-large;">
+            menu
+        </span>
+        <a href="../html/inscrire_acc.php" class="btn hide">إلتحـــاق</a>
+        <ul class="hide">
+            <li><a href="">مشاريع</a></li>
+            <li><a href="entreprise.php">شركات</a></li>
+            <li><a href="">حرفيين</a></li>
+            <li><a href="">معلومات</a></li>
+            <li><a href="">الصفحة الرئيسية</a></li>
+        </ul>
+        <p href="">حرفتي</p>
+    </header>
+    <div style="width: 100vw; height: 100vh; background-image:url(../background/—Pngtree—corporate\ geometric\ atmosphere\ office\ propaganda_1070459.jpg) ; background-repeat: no-repeat;">
+
+    </div>
+   
+    
+</body>
+<script>
+    let show = document.querySelector('#show');
+    let menu = document.querySelector('.menu');
+    let close = document.querySelector('#close');
+
+    show.addEventListener("click", function () {
+        menu.style.display = 'flex'
+    })
+    close.addEventListener("click", function () {
+        menu.style.display = 'none'
+    })
+</script>
+</html>

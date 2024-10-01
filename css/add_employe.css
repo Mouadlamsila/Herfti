@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../background/vines-1118466_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Cairo", sans-serif;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 0px;
+    margin-top: 6vh;
+    position:relative;
+    text-align: center;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+.container:hover {
+    transform: scale(1.02);
+    }
+
+.item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); /* اللون الأبيض مع شفافية */
+    border-radius: 15px;
+    margin-top: 75px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+/* header */
+.item .header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item .header span {
+    color: black;
+    font-size: 10em;
+}
+
+/* header */
+
+/* input */
+.input {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.input label {
+    text-align: center;
+    color: #fff;
+    width: 30px;
+    text-align: center;
+    height: auto;
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+}
+
+
+.input input{
+    width: 100%;
+    text-align: center;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+}
+
+/* input */
+
+/* select */
+.input select {
+    text-align: center;
+    width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+}
+
+/* select */
+
+
+/* upload_photo */
+.input .upload_photos {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.input .upload_photos .upload_photo {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+
+}
+
+/* upload_photo */
+
+
+
+/* genre */
+.genres {
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+}
+
+.genres p {
+    font-size: 20px;
+    font-weight: 600;
+
+    user-select: none;
+}
+
+.genre {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+.genre .option .man,
+.genre .option .woman {
+    color: black;
+    cursor: pointer;
+}
+
+
+.genres .genre .option input:checked+.man {
+    color: blue;
+}
+
+.genres .genre .option input:checked+.woman {
+    color: rgb(255, 0, 43);
+}
+
+
+/* genre */
+
+/* button */
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+#btn input {
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 2px rgb(9, 9, 9) solid;
+    border-radius: 2em;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#btn input:hover {
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* button */
+
+
+
+
+/* radio */
+
+.radio{
+    display: flex;
+    width: 98%;
+    justify-content: right;
+}
+
+.radio label{
+    font-family: "Cairo", sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.radio input{
+    width: 16px;
+}
+
+hr{
+    margin-top: 1em;
+}
+.foot{
+
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    font-weight: 800;
+    user-select: none;
+    font-size: x-large;
+}
+
+.foot a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    transition: .3s ease;
+}
+
+.foot a:hover{
+    color: rgb(250, 9, 9);
+}
+
+
+@media (max-width:800px) {
+    .item {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 2em;
+        margin-top: 1em;
+        background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: brightness(100%);
+    transition: 0.5s ease;
+        
+    }
+    .item .header span {
+        color: black;
+        font-size: 5em;
+     
+        
+    }
+    .input input {
+        width: 200px;
+    }
+
+    .foot{
+        font-size: medium;
+    }
+}

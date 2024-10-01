@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../background/idea-6900632_1920.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    flex-direction: column;
+    border-radius: 2em;
+}
+
+
+.header p{
+    font-family: "Cairo", sans-serif;
+    margin-bottom: 3em;
+    font-size: xx-large;
+    font-weight: 700;
+    user-select: none;
+}
+
+.header h1{
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.input label {
+    color: #fff;
+    background-color: blue;
+    width: 30px;
+    text-align: center;
+    height: auto;
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    padding-right: 20px;
+    outline: none;
+    border: 2px solid blue;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    color: gray;
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+}
+
+
+/* upload_photo */
+.input .upload_photos {
+    width: 100%;
+    height: 100%;
+}
+
+.input .upload_photos .upload_photo {
+    background-color: #fff;
+    height: 34px;
+    width: 100%;
+    color: gray;
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+    border: 2px solid blue;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+
+}
+
+/* upload_photo */
+
+.input textarea{
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    padding-right: 20px;
+    outline: none;
+    border: 2px solid blue;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    color: gray;
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+}
+
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.btn input {
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 2px blue solid;
+    border-radius: 2em;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn input:hover {
+    background-color: blue;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+hr{
+    margin-top: 2em;
+}
+.foot{
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    font-weight: 800;
+    user-select: none;
+    font-size: x-large;
+}
+.foot a{
+    text-decoration: none;
+    color: red;
+    transition: .3s ease;
+}
+
+.foot a:hover{
+    color: blue;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.footer a:first-child{
+    text-decoration: none;
+    font-family: "Cairo", sans-serif;
+    color: red;
+    border: 2px solid red;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-weight: 800;
+    transition: .2s ease;
+}
+.footer a:first-child:hover{
+    color: #fff;
+    background: red;
+    border: 2px solid #fff;
+}
+
+.footer a:last-child{
+    text-decoration: none;
+    font-family: "Cairo", sans-serif;
+    background: blue;
+    color: #fff;
+    border: 2px solid blue;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-weight: 800;
+    transition: .2s ease;
+}
+
+.footer a:last-child:hover{
+    color: blue;
+    background: transparent;
+    border: 2px solid blue;
+}
+
+@media (max-width:800px) {
+    .header p{
+        font-family: "Cairo", sans-serif;
+        margin-bottom: 3em;
+        font-size: larger;
+        font-weight: 500;
+        user-select: none;
+        text-align: center;
+    }
+}

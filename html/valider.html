@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        footer{
+            margin-top: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info {
+            font-weight: 900;
+            font-size: x-large;
+            
+        }
+        .img{
+            width: 30%;
+            margin-right: 50px;
+        }
+        img{
+            width: 100%;
+            margin-right: 50px;
+            
+        }
+        span{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="close">
+            <span class="material-symbols-outlined close" id="close">
+                close
+            </span>
+        </div>
+        <p>حرفتي</p>
+        <ul>
+            <li><a href="home.php">الصفحة الرئيسية</a></li>
+            <li><a href="#">معلومات</a></li>
+            <li><a href="view_employe.php">حرفيين</a></li>
+            <li><a href="entreprises.php">شركات</a></li>
+        </ul>
+        <a href="../html/inscrire_acc.php" class="btn">إلتحـــاق</a>
+    </header>
+
+    <header>
+        <span class="material-symbols-outlined show" id="show" style="font-size: xx-large;">
+            menu
+        </span>
+        <a href="../html/inscrire_acc.php" class="btn hide">إلتحـــاق</a>
+        <ul class="hide">
+            <li><a href="entreprises.php">شركات</a></li>
+            <li><a href="view_employe.php">حرفيين</a></li>
+            <li><a href="">معلومات</a></li>
+            <li><a href="home.php">الصفحة الرئيسية</a></li>
+        </ul>
+        <p href="">حرفتي</p>
+    </header>
+    <footer>
+        <div class="img">
+            <img src="../background/undraw_contact_us_re_4qqt.svg" alt="">
+        </div>
+        <div class="info">
+            <h1>! مرحبا</h1>
+            <p><span>لقد تم تسجيل طلبطم بنجاح </span><br> سيتم عرضه  وفي حالة أي جديد سنقوم  بإبلاغك <br> بواسطة البريد الإلكتروني أو رقم الهاتف <br>. شكرا على ثقتك بنا</h1></span></p>
+        </div>
+        
+    </footer>
+
+
+    <script>
+        let show = document.querySelector('#show');
+        let menu = document.querySelector('.menu');
+        let close = document.querySelector('#close');
+
+        show.addEventListener("click", function () {
+            menu.style.display = 'flex'
+        })
+        close.addEventListener("click", function () {
+            menu.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>

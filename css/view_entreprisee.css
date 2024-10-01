@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Cairo", sans-serif;
+    background-image: url(../background/notepad-3693309_1920.jpg);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 7em;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 80px;
+ 
+}
+
+.container .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.container .cards .card{
+    height: auto;
+    width: 400px;
+    background-color: rgb(234, 106, 47 ,0.8);
+    /*background-color: rgba(255, 12, 12, 0.6);*/
+    padding: 2em 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 1em;
+    color: #fff;
+    direction:  ltr;
+}
+
+.container .cards .card h2{
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+.container .cards .card .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .cards .card .img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 4px solid black;
+    margin-bottom: 2em ;
+    transition: .3s ease;
+}
+
+.container .cards .card .img img:hover{
+    border-color: #fff;
+}
+
+.container .cards .card .infos{
+    width: 100%;
+    height: 100%;
+}
+
+.container .cards .card .infos .info{
+    display: flex;
+    height: 100%;
+    margin: 10px 10px ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container .cards .card .infos .info p:last-child{
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn2{
+    margin-top: 2em;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.btn2 a{
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 800;
+    border-radius: 1em;
+    transition: .6s ease;
+}
+
+.btn2 a:hover{
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 1em;
+}
+.b{
+    width: 50px;
+    text-decoration: none;
+    background-color: rgb(243, 138, 9);
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../background/ai-generated-8228362_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: brightness(100%);
+    transition: 0.5s ease;
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.267);
+    padding: 2em;
+    border-radius: 2em;
+    position: fixed;
+    color: #fff;
+
+}
+
+h4 {
+    color: yellow;
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin-bottom: .5em;
+    font-weight: 800;
+}
+
+.card p {
+    font-size: 20px;
+    color: rgb(247, 243, 243);
+}
+
+.btn-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.btn-info a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-bottom: transparent solid 2px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: .4s ease;
+}
+
+.btn-info a:hover {
+    color: yellow;
+    border-bottom: yellow solid 2px;
+    font-weight: 800;
+}
+
+/* .card:hover body{
+    backdrop-filter: brightness(30%);
+} */
+
+@media (max-width:600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../background/man-5557864_1920.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        backdrop-filter: brightness(30%);
+        transition: 0.5s ease;
+    }
+}

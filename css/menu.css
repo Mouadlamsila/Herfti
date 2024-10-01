@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Cairo", sans-serif;
+}
+
+/* menu */
+.menu {
+    width: 500px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    color: #fff;
+    top: 0px;
+    padding: 1em 0em;
+    user-select: none;
+    font-family: "El Messiri", sans-serif;
+}
+
+.menu .close {
+    width: 100%;
+    margin-right: 1em;
+}
+
+.menu .close span {
+    text-align: right;
+    font-size: xx-large;
+
+}
+
+.menu p {
+    width: auto;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: "Cairo", sans-serif;
+    display: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2em 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.menu ul li:hover {
+    background-color: rgb(29, 29, 29);
+    border-bottom: none;
+    border-radius: 0;
+
+    box-shadow: 0px 0px 0px 0px transparent;
+
+}
+
+.menu ul li a {
+    font-size: 30px;
+}
+
+.menu .btn {
+    border: 2px solid #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+    transition: .2s ease;
+    font-family: "Cairo", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.menu .btn:hover {
+    background: #fff;
+    color: black;
+    scale: 1.1;
+}
+
+
+
+/* menu */
+
+
+
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    padding: 2em 0;
+    user-select: none;
+}
+
+/* menu icon*/
+header .show {
+    display: none;
+}
+
+/* menu icon*/
+
+header p {
+    margin: 0 1em;
+    width: auto;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: "Cairo", sans-serif;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    font-size: 20px;
+}
+
+header ul {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    list-style-type: none;
+    font-family: "El Messiri", sans-serif;
+}
+
+header ul li {
+    border: none;
+}
+
+header ul li:hover {
+    border-bottom: 3px solid #fff;
+    border-radius: 1em;
+
+    box-shadow: 0px 60px 100px 10px #fff;
+    background-color: black;
+
+}
+
+header .btn {
+    border: 2px solid #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+    transition: .2s ease;
+}
+
+header .btn:hover {
+    background: #fff;
+    color: black;
+    scale: 1.1;
+}
+
+
+@media (max-width:864px) {
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        position: none;
+        z-index: 999;
+        top: 0;
+        padding: 2em 0;
+        user-select: none;
+    }
+    .menu {
+        width: 100%;
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        justify-content: space-between;
+        height: 100%;
+        background-color: black;
+        color: #fff;
+        top: 0px;
+        padding: 1em 0em;
+        user-select: none;
+        font-family: "El Messiri", sans-serif;
+    }
+    .menu p {
+        display: block;
+        width: auto;
+        font-weight: 900;
+        font-size: 30px;
+        font-family: "Cairo", sans-serif;
+    }
+    /* menu icon*/
+    header .show {
+        display: block;
+        margin-left: 1em;
+    }
+
+    header .hide {
+        display: none;
+    }
+}
+
+
+@media (max-width:600px) {
+    
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: none;
+    z-index: 999;
+    top: 0;
+    padding: 2em 0;
+    user-select: none;
+}
+    .menu {
+        width: 100%;
+        position: absolute;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        justify-content: space-between;
+        height: 100%;
+        background-color: black;
+        color: #fff;
+        top: 0px;
+        padding: 1em 0em;
+        user-select: none;
+        font-family: "El Messiri", sans-serif;
+    }
+
+    .menu p {
+        display: block;
+        width: auto;
+        font-weight: 900;
+        font-size: 30px;
+        font-family: "Cairo", sans-serif;
+    }
+}

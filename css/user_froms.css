@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../background/apple-1834328_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Cairo", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.405);
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    flex-direction: column;
+    border-radius: 2em;
+}
+
+/* header */
+.item .header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item .header span {
+    color: red;
+    font-size: 10em;
+}
+
+/* header */
+
+/* input */
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.input label {
+    color: #fff;
+    background-color: red;
+    width: 30px;
+    text-align: center;
+    height: auto;
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+}
+
+.input input {
+    width: 500px;
+    height: 100%;
+    direction: rtl;
+    padding-right: 20px;
+    outline: none;
+    border: 2px solid red;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    color: gray;
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+}
+
+/* input */
+
+
+
+
+/* upload_photo */
+.input .upload_photos {
+    width: 100%;
+    height: 100%;
+}
+
+.input .upload_photos .upload_photo {
+    background-color: #fff;
+    height: 34px;
+    width: 100%;
+    color: gray;
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+    border: 2px solid red;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+
+}
+
+/* upload_photo */
+
+
+
+/* genre */
+.genres {
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+}
+
+.genres p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+}
+
+.genre {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    justify-content: space-between;
+}
+
+
+.genre .option .man,
+.genre .option .woman {
+    color: white;
+    cursor: pointer;
+}
+
+
+.genres .genre .option input:checked+.man {
+    color: blue;
+}
+
+.genres .genre .option input:checked+.woman {
+    color: rgb(255, 0, 43);
+}
+
+
+/* genre */
+
+/* button */
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.btn input {
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 2px red solid;
+    border-radius: 2em;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn input:hover {
+    background-color: red;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* button */
+
+
+
+
+/* radio */
+
+.radio{
+    display: flex;
+    width: 98%;
+    justify-content: right;
+}
+
+.radio label{
+    font-family: "Cairo", sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.radio input{
+    width: 16px;
+}
+
+hr{
+    margin-top: 2em;
+}
+.foot{
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    font-weight: 800;
+    user-select: none;
+    font-size: x-large;
+    color: #fff;
+}
+
+.foot a{
+    text-decoration: none;
+    color: rgb(33, 33, 218);
+    transition: .3s ease;
+}
+
+.foot a:hover{
+    color: red;
+}
+
+
+@media (max-width:800px) {
+    .item {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.405);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 2em;
+        margin-top: 1em;
+        margin: 2em;
+    }
+    .item .header span {
+        color: red;
+        font-size: 10em;
+     
+        
+    }
+    .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30px;
+    }
+    
+    .input label {
+        color: #fff;
+        background-color: red;
+        width: 30px;
+        text-align: center;
+        height: auto;
+        padding-top: 2px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 5px 0;
+    }
+    
+    .input input {
+        width: 100%;
+        height: 100%;
+        direction: rtl;
+        padding-right: 20px;
+        outline: none;
+        border: 2px solid red;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        color: gray;
+        font-family: "Cairo", sans-serif;
+        font-weight: bolder;
+    }
+    
+    /* input */
+    
+    
+    
+    
+    /* upload_photo */
+    .input .upload_photos {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .input .upload_photos .upload_photo {
+        background-color: #fff;
+        height: 34px;
+        width: 100%;
+        color: gray;
+        font-family: "Cairo", sans-serif;
+        font-weight: bolder;
+        border: 2px solid red;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+    
+    }
+    
+    /* upload_photo */
+
+    .foot{
+        font-size: medium;
+    }
+}
